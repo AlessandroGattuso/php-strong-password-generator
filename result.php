@@ -32,7 +32,10 @@
   <title>result</title>
 </head>
 <body>
-  <div class="container d-flex justify-content-center align-items-center vh-100">
+  <form action="./index.php" method="GET">
+    <button class="btn btn-outline-primary m-3" type="submit">back</button>
+  </form>
+  <div class="container d-flex justify-content-center align-items-center vh-50">
     <p><?php echo ($_SESSION['password'] != '') ? '<span class="text-primary fs-4">Password</span>: '.$_SESSION['password'] : '';?></p>
   </div>
 </body>

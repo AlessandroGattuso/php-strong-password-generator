@@ -15,7 +15,7 @@
     <form action="./result.php" method="GET">
       <div class="text-danger"><?php echo (isset($_GET['error'])) ? $_GET['error'] : ''; ?></div>
       <div class="input-group mb-3">
-        <input name="password_length" type="text" class="form-control" placeholder="Password's lenght" value="<?php echo isset($_SESSION['password_length']) ? $_SESSION['password_length'] : '';?>" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <input name="password_length" type="text" class="form-control" placeholder="Password's lenght" value="<?php echo !empty($_SESSION['password_length']) ? $_SESSION['password_length'] : '';?>" aria-label="Recipient's username" aria-describedby="button-addon2">
         <button class="btn btn-outline-primary" type="submit" id="button-addon2">Send</button>
       </div>
       <div class="form-check">
