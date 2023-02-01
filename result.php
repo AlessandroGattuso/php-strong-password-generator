@@ -10,12 +10,12 @@
     header('location:./index.php?error=invalid length');
 
   $_SESSION['chars_rep'] = (isset($_GET['chars_rep'])) ? $_GET['chars_rep'] : '';
-  $_SESSION['letters'] = (isset($_GET['letters'])) ? $_GET['letters'] : '';
+  $_SESSION['upper_letters'] = (isset($_GET['upper_letters'])) ? $_GET['upper_letters'] : '';
   $_SESSION['numbers'] = (isset($_GET['numbers'])) ? $_GET['numbers'] : '';
   $_SESSION['symbols'] = (isset($_GET['symbols'])) ? $_GET['symbols'] : '';
 
   $_SESSION['dictionary'] = 'abcdefghijklmnopqrstuvwxyz';
-  setDitionary();
+  setDictionary();
 
   $_SESSION['password'] = '';
   generatePassword();

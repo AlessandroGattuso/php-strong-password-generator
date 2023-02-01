@@ -1,7 +1,7 @@
 <?php
 
-  function setDitionary(){
-    if(!empty($_SESSION['letters'])){
+  function setDictionary(){
+    if(!empty($_SESSION['upper_letters'])){
       $_SESSION['dictionary'] .= 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     }
     if(!empty($_SESSION['numbers'])){

@@ -25,9 +25,9 @@
         </label>
       </div>
       <div class="form-check">
-        <input name="letters" class="form-check-input" type="checkbox" id="flexCheckDefault" checked>
+        <input name="upper_letters" class="form-check-input" type="checkbox" id="flexCheckDefault" checked>
         <label class="form-check-label" for="flexCheckDefault">
-          Letters 
+          Uppercase Letters 
         </label>
       </div>
       <div class="form-check">
